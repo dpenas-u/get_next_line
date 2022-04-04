@@ -10,24 +10,24 @@ int	main(int argc, char *argv[])
 	if (argc > 1)
 	{
 		fd = open(argv[1], O_RDONLY);
-		s = get_next_line(fd);
-		printf("%s", s);
-		//free(s);
-		s = get_next_line(fd);
-		printf("%s", s);
-		//free(s);
 		/*
 		s = get_next_line(fd);
-		printf("%s\n", s);
-		printf("\n-------\n");
+		printf("%s", s);
+		//free(s);
+		s = get_next_line(fd);
+		printf("%s", s);
+		//free(s);
+		s = get_next_line(fd);
+		printf("%s", s);
 		//free(s);
 		*/
-		/*
+		
 		while ((s = get_next_line(fd)))
 		{
-			free(s);
+			printf("%s", s);
+			//free(s);
 		}
-		*/
+		
 		close(fd);
 	}
 	system("leaks a.out");
