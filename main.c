@@ -11,11 +11,23 @@ int	main(int argc, char *argv[])
 	{
 		fd = open(argv[1], O_RDONLY);
 		s = get_next_line(fd);
-		//printf("buffer: %s", s);
-		free(s);
+		printf("%s", s);
+		//free(s);
 		s = get_next_line(fd);
-		//printf("buffer: %s", s);
-		free(s);
+		printf("%s", s);
+		//free(s);
+		/*
+		s = get_next_line(fd);
+		printf("%s\n", s);
+		printf("\n-------\n");
+		//free(s);
+		*/
+		/*
+		while ((s = get_next_line(fd)))
+		{
+			free(s);
+		}
+		*/
 		close(fd);
 	}
 	system("leaks a.out");
