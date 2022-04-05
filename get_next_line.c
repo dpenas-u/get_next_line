@@ -6,12 +6,11 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 09:07:24 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/04/05 15:19:01 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/04/05 15:21:50 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 static int	ft_read_buff(int fd, char **nxt_l);
 static char	*ft_get_line(char **nxt_l, int ret);
