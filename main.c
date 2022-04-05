@@ -13,21 +13,28 @@ int	main(int argc, char *argv[])
 		/*
 		s = get_next_line(fd);
 		printf("%s", s);
-		//free(s);
+		free(s);
 		s = get_next_line(fd);
 		printf("%s", s);
-		//free(s);
+		free(s);
 		s = get_next_line(fd);
 		printf("%s", s);
-		//free(s);
+		free(s);
+		s = get_next_line(fd);
+		printf("%s", s);
+		free(s);
+		s = get_next_line(fd);
+		printf("%s", s);
+		free(s);
 		*/
-		
+		///*
 		while ((s = get_next_line(fd)))
 		{
 			printf("%s", s);
-			//free(s);
+			//printf("\n----\n");
+			free(s);
 		}
-		
+		//*/
 		close(fd);
 	}
 	system("leaks a.out");
