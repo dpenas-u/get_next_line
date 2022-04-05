@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 09:07:24 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/04/05 13:59:51 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/04/05 15:19:01 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static char	*ft_get_line(char **nxt_l, int ret)
 		free(*nxt_l);
 		*nxt_l = aux;
 	}
-	if (!ret)
+	else if (!ret)
 	{
 		line = ft_substr(*nxt_l, 0, ft_strlen(*nxt_l));
 		free(*nxt_l);
